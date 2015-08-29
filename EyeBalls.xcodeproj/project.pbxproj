@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40C4BB41B0EF43C00838760 /* BriefingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40C4BB31B0EF43C00838760 /* BriefingViewController.swift */; };
+		A41E019B1B1EC8A600951DDA /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = A41E019A1B1EC8A600951DDA /* BullsEye.html */; };
 		A4BD01551B030F5F0016A900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD01541B030F5F0016A900 /* AppDelegate.swift */; };
 		A4BD01571B030F5F0016A900 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD01561B030F5F0016A900 /* ViewController.swift */; };
 		A4BD015A1B030F5F0016A900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BD01581B030F5F0016A900 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A40C4BB31B0EF43C00838760 /* BriefingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BriefingViewController.swift; sourceTree = "<group>"; };
+		A41E019A1B1EC8A600951DDA /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 		A4BD014F1B030F5F0016A900 /* EyeBalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeBalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BD01531B030F5F0016A900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4BD01541B030F5F0016A900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,8 +81,10 @@
 		A4BD01511B030F5F0016A900 /* EyeBalls */ = {
 			isa = PBXGroup;
 			children = (
+				A41E019A1B1EC8A600951DDA /* BullsEye.html */,
 				A4BD01541B030F5F0016A900 /* AppDelegate.swift */,
 				A4BD01561B030F5F0016A900 /* ViewController.swift */,
+				A40C4BB31B0EF43C00838760 /* BriefingViewController.swift */,
 				A4BD01581B030F5F0016A900 /* Main.storyboard */,
 				A4BD015B1B030F5F0016A900 /* Images.xcassets */,
 				A4BD015D1B030F5F0016A900 /* LaunchScreen.xib */,
@@ -161,6 +167,7 @@
 				TargetAttributes = {
 					A4BD014E1B030F5F0016A900 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 86JK6L54TV;
 					};
 					A4BD01631B030F5F0016A900 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -193,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4BD015A1B030F5F0016A900 /* Main.storyboard in Resources */,
+				A41E019B1B1EC8A600951DDA /* BullsEye.html in Resources */,
 				A4BD015F1B030F5F0016A900 /* LaunchScreen.xib in Resources */,
 				A4BD015C1B030F5F0016A900 /* Images.xcassets in Resources */,
 			);
@@ -213,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4BD01571B030F5F0016A900 /* ViewController.swift in Sources */,
+				A40C4BB41B0EF43C00838760 /* BriefingViewController.swift in Sources */,
 				A4BD01551B030F5F0016A900 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,9 +349,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = EyeBalls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EyeBalls;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -350,9 +362,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = EyeBalls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EyeBalls;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -370,7 +385,7 @@
 				);
 				INFOPLIST_FILE = EyeBallsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EyeBallsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EyeBalls.app/EyeBalls";
 			};
 			name = Debug;
@@ -385,7 +400,7 @@
 				);
 				INFOPLIST_FILE = EyeBallsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EyeBallsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EyeBalls.app/EyeBalls";
 			};
 			name = Release;
@@ -409,6 +424,7 @@
 				A4BD01701B030F5F0016A900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4BD01711B030F5F0016A900 /* Build configuration list for PBXNativeTarget "EyeBallsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +433,7 @@
 				A4BD01731B030F5F0016A900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
